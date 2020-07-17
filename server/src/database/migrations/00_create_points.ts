@@ -22,8 +22,8 @@ export async function up(knex: Knex) {
     table.decimal("longitude").notNullable();
     table.string("uf", 2).notNullable();
     table.string("city").notNullable();
-    table.string("endereco").notNullable();
-    table.string("numero").notNullable();
+    table.string("address").notNullable();
+    table.integer("number").notNullable();
   });
 }
 
