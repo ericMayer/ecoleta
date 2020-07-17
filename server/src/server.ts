@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import routes from "./routes";
 import path from "path";
 
@@ -11,6 +12,10 @@ server.use(express.json());
 
 // dizendo que irá utilizar as rotas
 server.use(routes);
+
+// dizendo que o servidor irá utilizar cors para permitir que
+// aplicações web acessem essa api
+server.use(cors());
 
 // pegando os arquivos estáticos de imagens
 // .. é para voltar uma pasta
