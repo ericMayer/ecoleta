@@ -24,7 +24,8 @@ export default class PointsController {
     const trx = await connection.transaction();
 
     const point = {
-      image: "teste",
+      image:
+        "https://images.unsplash.com/photo-1544509490-234516547bf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
       name,
       email,
       whatsapp,
