@@ -53,6 +53,8 @@ export default class PointsController {
     // que ele coleta
     await trx("points_items").insert(items_point);
 
+    await trx.commit();
+
     return response.json({
       id: idPointInserted[0],
       ...point,
