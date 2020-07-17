@@ -17,6 +17,10 @@ routes.get("/items", items.selectAll);
 // de dados e retornado uma mensagem de sucesso
 routes.post("/points", point.insert);
 
+// rota para seleção de vários pontos de coleta, por filtros
+// estado, cidade e items
+routes.get("/points", point.selectAllWhere);
+
 // rota para seleção de ponto de coleta por id
 routes.get("/points/:id", point.selectByID);
 
