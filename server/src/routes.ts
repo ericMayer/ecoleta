@@ -17,5 +17,8 @@ routes.get("/items", items.selectAll);
 // de dados e retornado uma mensagem de sucesso
 routes.post("/points", point.insert);
 
+// rota para seleção de ponto de coleta por id
+routes.get("/points/:id", point.selectByID);
+
 // exportando a rota
 export default routes;

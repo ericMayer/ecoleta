@@ -16,6 +16,7 @@ const connection = knex({
     filename: path.resolve(__dirname, "database.sqlite"),
   },
   useNullAsDefault: true,
+  // propagateCreateError: false,
 });
 
 // exportando função de conexão com o bd
